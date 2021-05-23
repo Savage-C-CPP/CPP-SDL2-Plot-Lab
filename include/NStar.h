@@ -44,6 +44,7 @@ public:
         it++;                       // Ставим её следующей от начала
         end = std::prev(StarVerts->end());     // Конечная вершина (для проверки окончания цикла)
     };
+
     ~NStar()
     {
         delete StarVerts;

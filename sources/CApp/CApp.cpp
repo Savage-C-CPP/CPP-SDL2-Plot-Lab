@@ -9,28 +9,26 @@ CApp::CApp()
     Window = nullptr;
     Surface = nullptr;
 
-    int n = 5,
-        r = 200,
-        R = 200,
-        a = 0,
-        x = w_w / 2,
-        y = w_h / 2;
+    num_of_verts = 5,
+    r = 200,
+    R = 500,
+    a = 360,
+    cx = w_w / 2,
+    cy = w_h / 2;
+    pen_r = 20;
+
     // TODO: Пользовательский воод где-то здесь
-    Star = new NStar(n, r, R, a, x, y);
-    Star->PrintVerts();
-    Pen = *Star->begin;                             // Ставим перо на начало коллекции вершин
-    Dest = *Star->it;                               // Вершина, куда перо поведёт линию
-    traectory = CDraw::GetAllPointsBrezenham(Pen.x, // Задаём траекторию
-                                             Pen.y,
-                                             Dest.x,
-                                             Dest.y);
-    traectory_it = traectory.begin();
-    traectory_it++;
-    Dest = *std::prev(traectory.end());
-    std::cout << "Start: (" << Pen.x << ", " << Pen.y << ") Dest: (" << Dest.x << ", " << Dest.y << ")\n";
-    std::cout << "Traectory:\n";
-    for (auto it = traectory_it; it != traectory.end(); ++it)
-        std::cout << "(" << it->x << ", " << it->y << ")\n";
+    Star = new NStar(num_of_verts,
+                     r,
+                     R,
+                     a,
+                     cx,
+                     cy);
+
+    Pen = *Star->begin; // Ставим перо на начало коллекции вершин
+    Dest = *Star->it;   // Вершина, куда перо поведёт линию
+    OnChangePenTraectory();
+
     running = true;
 }
 

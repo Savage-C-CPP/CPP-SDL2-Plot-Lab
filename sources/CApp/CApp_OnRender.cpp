@@ -3,9 +3,8 @@
 
 void CApp::OnRender()
 {
-    CDraw::DrawCircle(Renderer, Pen.x, Pen.y, 5, true); // Ставим жирную точку в текущей позиции пера
-    // CDraw::DrawLine(Renderer, Pen.x, Pen.y, Dest.x, Dest.y, 10);
-    // CDraw::DrawNStar(Renderer, 5, 100, 350, 350);
+    CDraw::DrawCircle(Renderer, Pen.x, Pen.y, pen_r, true); // Ставим жирную точку в текущей позиции пера
+    // CDraw::DrawNStar(Renderer, num_of_verts, R, cx, cy);
     SDL_RenderPresent(Renderer);
     SDL_Delay((1.0 / 60) * 400);
 }
