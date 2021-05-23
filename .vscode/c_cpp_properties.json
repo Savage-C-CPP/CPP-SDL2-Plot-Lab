@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "😈",
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerPath": "/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "includePath": [
+                "/usr/include/SDL2/**",
+                "${workspaceFolder}/sources/**",
+                "${workspaceFolder}/include/**"
+            ]
+        }
+    ],
+    "version": 4
+}
