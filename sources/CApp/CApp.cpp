@@ -8,16 +8,27 @@ CApp::CApp()
 
     Window = nullptr;
     Surface = nullptr;
+                                                // Minimum      Maximum
+    std::cout << "Введите размер экрана:";
+    std::cout << "\n\twidth: ";                 // 100          1366
+    std::cin >> w_w;
+    std::cout << "\n\theight: ";
+    std::cin >> w_h;                            // 100          768
+    std::cout << "\nВведите параметры звезды:";
+    std::cout << "\n\tКоличество вершин: ";
+    std::cin >> num_of_verts;                   // 3            inf
+    std::cout << "\n\tВнешний радиус: ";
+    std::cin >> R;                              // ?            ?
+    std::cout << "\n\tВнутренний радиус: ";
+    std::cin >> r;                              // ?            ?
+    std::cout << "\n\tУгол наклона alpha: ";
+    std::cin >> a;                              // -inf         inf
+    std::cout << "\nВведите радиус пера: ";
+    std::cin >> pen_r;
 
-    num_of_verts = 5,
-    r = 200,
-    R = 500,
-    a = 360,
-    cx = w_w / 2,
+    cx = w_w / 2; // Координаты центра пусть будудт в центре окна
     cy = w_h / 2;
-    pen_r = 20;
 
-    // TODO: Пользовательский воод где-то здесь
     Star = new NStar(num_of_verts,
                      r,
                      R,
