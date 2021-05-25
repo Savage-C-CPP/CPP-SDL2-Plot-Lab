@@ -3,7 +3,8 @@
 
 #include <SDL.h>
 #include <vector>
-#include "NStar.h"
+#include "CDraw.h"
+#include "Plot.h"
 
 class CApp
 {
@@ -12,16 +13,7 @@ private:
         w_h = 700;
 
     bool running;
-    const char *WindowTitle = "Star";
-
-    // Пользователь вводит
-    int num_of_verts = 5, // Количество вершин
-        r = 200,          // внутренний радиус звезды
-        R = 200,          // внешний радиус звезды
-        a = 20,           // Угол наклона звезды на плоскости
-        cx = w_w / 2,     // центро звезды x
-        cy = w_h / 2,     // центро звезды y
-        pen_r = 20;       // радиус пера
+    const char *WindowTitle = "Plot";
 
     SDL_Window *Window;
     SDL_Surface *Surface;
@@ -30,24 +22,53 @@ private:
 public: // Цикл программы
     CApp();
 
-    int OnExecute();            // Запускает инициализацию, если успешно, запускает цикл программы, где слушаются и обрабатываются события, отрабатывается логика и отрисовывается на экран  
-    bool OnInit();              // Инициализация компонентов Window, Surface, Renderer
-    void OnLoop();              // Запускает процедуру изменения состояния и положения рисующего компонента, задаются вершины и прочее 
-    void OnEvent(SDL_Event *);  // Обработка событий (нажатие esc для выхода)
-    void OnRender();            // Запускает отрисовку точки (круга) в текущем положении пера
-    void OnCleanup();           // Освобождение ресурсов при завершении программы
+    int OnExecute();           // Запускает инициализацию, если успешно, запускает цикл программы, где слушаются и обрабатываются события, отрабатывается логика и отрисовывается на экран
+    bool OnInit();             // Инициализация компонентов Window, Surface, Renderer
+    void OnLoop();             // Запускает процедуру изменения состояния и положения рисующего компонента, задаются вершины и прочее
+    void OnEvent(SDL_Event *); // Обработка событий (нажатие esc для выхода)
+    void OnRender();           // Рисует кадр отрисовку осей, графика
+    void OnCleanup();          // Освобождение ресурсов при завершении программы
 
-public:                                            // Логика отрисовки звезды
-    SDL_Point Pen;                                 // Позиция пера
-    SDL_Point Dest;                                // Вершина, к которой движется перо
-    std::vector<SDL_Point> traectory;              // траектория движения пера
-    std::vector<SDL_Point>::iterator traectory_it; // траектория движения пера
+private: // Логика отрисовки графика
+    std::vector<SDL_Point> points;
+    std::vector<SDL_Point>::iterator it_fx;
 
-    NStar *Star;
+    Plot plot; // Объект класса с логикой плота
 
-    void OnSetRandPenColor();                       // Устанавливает случайный цвет пера
-    void OnChangePenTraectory();                    // Запускает алгоритм Брезенхема, чтобы получить вектор координат, где проходит прямая. По этим
-    void OnPenTick();                               // Двигает перо
+    int line_radius = 2; // Толщина линии графика
+
+    void DrawFunction()
+    {
+        SDL_Point prev;
+        prev = *points.begin();
+        for (const auto point : points)
+        {
+            CDraw::DrawLine(Renderer, prev.x, prev.y, point.x, point.y, line_radius);
+            prev = point;
+        }
+    }
+
+    void solve_f() // Расчёт функции на всём отрезке OX
+    {
+        points.clear(); // Удаляем старые
+        double x, h, xmin, xmax;
+        h = 1 / plot.c.kx;
+        xmin = (-(*plot.c.x0)) / plot.c.kx;
+        xmax = (w_w - (*plot.c.x0)) / plot.c.kx;
+        for (x = xmin; x <= xmax; x += h)
+        {
+            Point(x, plot.f(x));
+        }
+    }
+
+    void Point(double x, double y) // Переводим координаты, сохраняем
+    {
+        int xe, ye;
+        xe = plot.osx(x);
+        ye = plot.osy(y);
+        if (xe >= 0 && xe < w_w && ye >= 0 && ye < w_h)
+            points.push_back({xe, ye});
+    }
 };
 
 #endif // _CAPP_H_

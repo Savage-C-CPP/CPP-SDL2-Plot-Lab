@@ -1,44 +1,24 @@
 #include "CApp.h"
-#include "CDraw.h"
+#include <iostream>
 
 CApp::CApp()
 {
-    w_w = 700;
-    w_h = 700;
-
     Window = nullptr;
     Surface = nullptr;
-                                                // Minimum      Maximum
-    std::cout << "Введите размер экрана:";
-    std::cout << "\n\twidth: ";                 // 100          1366
-    std::cin >> w_w;
-    std::cout << "\n\theight: ";
-    std::cin >> w_h;                            // 100          768
-    std::cout << "\nВведите параметры звезды:";
-    std::cout << "\n\tКоличество вершин: ";
-    std::cin >> num_of_verts;                   // 3            inf
-    std::cout << "\n\tВнешний радиус: ";
-    std::cin >> R;                              // ?            ?
-    std::cout << "\n\tВнутренний радиус: ";
-    std::cin >> r;                              // ?            ?
-    std::cout << "\n\tУгол наклона alpha: ";
-    std::cin >> a;                              // -inf         inf
-    std::cout << "\nВведите радиус пера: ";
-    std::cin >> pen_r;
 
-    cx = w_w / 2; // Координаты центра пусть будудт в центре окна
-    cy = w_h / 2;
+    // Пользователь вводит (w_w, w_h), kx, ky, lide_radius
 
-    Star = new NStar(num_of_verts,
-                     r,
-                     R,
-                     a,
-                     cx,
-                     cy);
+    w_w = 800;
+    w_h = 600;
+    line_radius = 2;
 
-    Pen = *Star->begin; // Ставим перо на начало коллекции вершин
-    Dest = *Star->it;   // Вершина, куда перо поведёт линию
-    OnChangePenTraectory();
+    int kx, ky; 
+    kx = 25, ky = 25;
+
+    // Задаём координаты центра координат, коэффициэнты масштабирования
+    plot.c.Init({0, w_h - 50}, {w_w, w_h - 50}, {50, 0}, {50, w_h}, kx, ky);
+
+    solve_f();
 
     running = true;
 }

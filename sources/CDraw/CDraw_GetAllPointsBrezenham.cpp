@@ -6,7 +6,7 @@
 /* is <0, =0, >0 respectively */
 #define sign(x) ((x > 0) ? 1 : ((x < 0) ? -1 : 0))
 
-std::vector<SDL_Point> CDraw::GetAllPointsBrezenham(int x0, int y0, int x1, int y1)
+std::vector<SDL_Point> CDraw::BresenhamLineVector(int x0, int y0, int x1, int y1)
 {
     std::vector<SDL_Point> points;
     int dx, dy, x, y, d, s1, s2, swap = 0, temp;

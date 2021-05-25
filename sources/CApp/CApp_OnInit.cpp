@@ -19,6 +19,8 @@ bool CApp::OnInit()
         return false;
 
     Renderer = SDL_CreateRenderer(Window, -1, SDL_RENDERER_ACCELERATED);
-    SDL_SetRenderDrawColor(Renderer,  0, 0, 255, 255);
+    // blueprint фон
+    SDL_SetRenderDrawColor(Renderer, 64, 92, 177, 0xFF);
+    SDL_RenderClear(Renderer);
     return true;
 }

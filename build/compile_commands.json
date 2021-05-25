@@ -1,72 +1,62 @@
 [
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnChangePenTraectory.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnChangePenTraectory.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnChangePenTraectory.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnCleanup.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnCleanup.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnCleanup.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnCleanup.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnCleanup.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnCleanup.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnEvent.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnEvent.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnEvent.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnEvent.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnEvent.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnEvent.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnInit.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnInit.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnInit.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnInit.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnInit.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnInit.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnLoop.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnLoop.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnLoop.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnLoop.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnLoop.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnLoop.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnRender.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnRender.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CApp/CApp_OnRender.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnPenTick.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnPenTick.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnPenTick.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawCircle.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawCircle.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawCircle.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnRender.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnRender.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnRender.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawGrid.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawGrid.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawGrid.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CApp/CApp_OnSetRandPenColor.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnSetRandPenColor.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CApp/CApp_OnSetRandPenColor.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawLine.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawLine.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawLine.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawCircle.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_DrawCircle.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_DrawCircle.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawNStar.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawNStar.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_DrawNStar.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawLine.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_DrawLine.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_DrawLine.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_GetAllPointsBrezenham.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_GetAllPointsBrezenham.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/CDraw/CDraw_GetAllPointsBrezenham.cpp"
 },
 {
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_DrawNStar.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_DrawNStar.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_DrawNStar.cpp"
-},
-{
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/CDraw/CDraw_GetAllPointsBrezenham.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_GetAllPointsBrezenham.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/CDraw/CDraw_GetAllPointsBrezenham.cpp"
-},
-{
-  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/build",
-  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/main.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/main.cpp",
-  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5/sources/main.cpp"
+  "directory": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/build",
+  "command": "/bin/c++  -I/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/include -isystem /usr/local/include/SDL2 -g -std=c++17 -o CMakeFiles/Plot.dir/sources/main.cpp.o -c /home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/main.cpp",
+  "file": "/home/wvovaw/Documents/Studwork/Niyaz/lr5.1/sources/main.cpp"
 }
 ]
