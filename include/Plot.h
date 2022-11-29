@@ -82,7 +82,8 @@ public:
 
     double f(double x)
     {
-        return sin(x);
+        // return sin(x);
+        return (x * x) / (x + 2);
     }
 
 };
